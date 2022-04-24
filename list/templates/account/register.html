@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}Login{% endblock %}
+
+{% block content %}
+    <div class="registration">
+        <form class="registration-form" method="post">
+            <label>{{ form.username.label }}:</label>
+            <span class="us">{{ form.username }}</span>
+            <br>
+            <label>{{ form.password1.label }}:</label>
+            <span class="p1">{{ form.password1 }}</span>
+            <br>
+            <label>{{ form.password2.label }}:</label>
+            <span class="p2">{{ form.password2 }}</span>
+            <br>
+            {% csrf_token %}
+            <input class="register-but" type="submit" value="Register">
+        </form>
+    
+        <p>Already have an account? <a href="{% url 'login' %}">Login</a></p>
+    </div>
+{% endblock %}

@@ -1,0 +1,209 @@
+body {
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    padding-top: 50px;
+}
+
+.container {
+    max-width: 550px;
+    margin: auto;
+    background-color: white;
+    box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.21);
+}
+
+header {
+    background: linear-gradient(90deg, rgb(250, 137, 49) 0%, rgb(215, 137, 49) 45%, rgb(180, 110, 49) 100%);
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 10px;
+    margin: auto;
+    align-items: center;
+    max-width: 550px;
+    border-radius: 3px 3px 0 0;
+}
+
+header a {
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+header a:hover {
+    text-shadow: 0.5px 0.5px wheat;
+}
+
+.tasks-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: white;
+    border-top: 1px solid gray;
+}
+
+.tasks-title {
+    display: flex;
+}
+
+.tasks-title a {
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+
+
+.complete-icon {
+    color: green;
+    padding-top: 4px;
+}
+
+
+
+.incomplete-icon {
+    margin-top: 3px;
+    height: 15px;
+    width: 15px;
+    background-color: gray;
+    border-radius: 50%;
+}
+
+.add-search-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1.5px solid black;
+}
+
+#add-task {
+    color: orange;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+        .delete-but {
+            text-decoration: none;
+            font-weight: 900;
+            color: red;
+            font-size: 1rem;
+            line-height: 0;
+        }
+
+    .tasks-title .red:hover, .delete-but:hover {
+        text-shadow: 0.5px 0.5px darkred;
+    }
+    .tasks-title .green:hover {
+        text-shadow: 0.5px 0.5px rgb(2, 72, 2);
+    }
+
+    
+    #add-task:hover {
+        text-shadow: 0.5px 0.5px darkorange;
+    }
+
+    .add-search-container form input, .login form input .create form input {
+        border: 1px solid gray;
+        border-radius: 5px;
+        padding: 5px;
+    }
+
+    .search-but, .login-but, .create-but, .task-del-but, .register-but {
+        background-color: white;
+        color: orange;
+        font-size: 0.8rem;
+        text-decoration: none;
+    }
+
+
+    .green {
+    color: rgb(7, 128, 7);
+}
+
+    .red {
+        color: red;
+    }
+
+    .search-input:hover, .login-form input[type=text]:hover, .login-form input[type=password]:hover,
+    .create input[type=text]:hover, .create form textarea:hover, .us:hover, .p1:hover, .p2:hover {
+        box-shadow: 1px 1px gray;
+    }
+
+    .login-form input[type=password] {
+        margin-left: 6px;
+    }
+
+    .login-form input[type=text], .login-form input[type=password] {
+        border: 1px solid gray;
+    }
+
+    .search-but:hover, .login-but:hover, .create-but:hover, .task-del-but:hover, .register-but:hover {
+        text-shadow: 0.5px 0.5px darkorange;
+        box-shadow: 1px 1px gray;
+    }
+
+    .login-but {
+        width: 75px;
+        font-size: 1rem;
+        border: 1px solid gray;
+    }
+
+    .login, .registration {
+        margin: 10px;
+        padding-top: 10px;
+        padding-bottom: 1px;
+    }
+
+    .login p>a {
+        text-decoration: none;
+    }
+
+    .back {
+        background: linear-gradient(90deg, rgb(250, 137, 49) 0%, rgb(215, 137, 49) 45%, rgb(180, 110, 49) 100%);
+    }
+
+    .back:hover {
+        background: linear-gradient(90deg, rgb(215, 137, 49) 0%, rgb(180, 110, 49) 45%, rgb(156, 88, 29) 100%);
+    }
+
+    .back a {
+        text-decoration: none;
+        display: flex;
+        justify-content: left;
+        color: white;
+        padding: 10px;
+        margin: auto;
+        align-items: center;
+    }
+
+    .create, .delete-form {
+        padding-bottom: 10px;
+        padding-left: 10px;
+    }
+
+    .create form input[type=text] {
+        margin-left: 57px;
+        border: 1px solid gray;
+    }
+
+    .create form input[type=checkbox] {
+        margin-left: 10px;
+    }
+
+    .create-but, .task-del-but, .register-but, .login-but {
+        border: 1px solid gray;
+        font-size: 1rem;
+        border-radius: 5px;
+    }
+
+    .registration p a {
+        text-decoration: none;
+    }
+
+    .us {
+        margin-left: 105px;
+    }
+    .p1 {
+        margin-left: 111px;
+    }
+    .p2 {
+        margin-left: 4px;
+    }

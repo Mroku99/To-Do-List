@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block title %}Task: {{ object.title }}{% endblock %}
+
+{% block content %}
+    <div class="back">
+        <p><a href="{% url 'task_list' %}">&#8592; Back</a></p>
+    </div>
+
+    <h2>Task: {{ object.title }}</h2>
+{% endblock %}

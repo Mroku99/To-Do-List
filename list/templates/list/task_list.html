@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block title %}To Do List {{ object_list.user }}{% endblock %}
+
+
+
+{% block content %}
+    <h1>To Do List</h1>
+    <div class="add-search-container">
+        <a id="add-task" href="{% url 'task_create' %}">Add New Task</a>
+        <form method="get">
+            <input class="search-input text-inp-hover" type="text" name="search-input" value="{{ search_tasks }}">
+            <input class="search-but" type="submit" value="Search">
+        </form>
+    </div>
+
+    <div>
+        {% for task in tasks %}
+            <div class="tasks-container">
+                {% if task.complete %}
+                    <div class="tasks-title">
+                        <i class="complete-icon fa fa-check"></i>
+                        <i><s><a class="green" href="{% url 'task_edit' task.id %}">{{ task }}</a></s></i>
+                    </div>
+                    <a class="delete-but fa fa-close" href="{% url 'task_delete' task.id %}"></a>
+                {% else %}
+                    <div class="tasks-title red">
+                        <div class="incomplete-icon"></div>
+                        <a class="red" href="{% url 'task_edit' task.id %}">{{ task }}</a>
+                    </div>
+                    <a class="delete-but fa fa-close" href="{% url 'task_delete' task.id %}"></a>
+                {% endif %}
+                
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}
