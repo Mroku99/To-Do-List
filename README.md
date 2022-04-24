@@ -6,4 +6,3 @@ Created CRUD and User Authentication with simple django class based views
 
 ## Screenshots
 ![Algorithm schema](./images_github_readme/logowanie.png)
-List.png
